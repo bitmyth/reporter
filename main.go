@@ -23,7 +23,7 @@ func main() {
 	defer client.Close()
 
 	err := client.Enqueue(analytics.Identify{
-		UserId: "home mac pro: " + GetOutboundIP().String(),
+		UserId: key + ": " + GetOutboundIP().String(),
 		Traits: analytics.NewTraits().
 			Set(key, value).
 			Set("ip", GetOutboundIP()),
