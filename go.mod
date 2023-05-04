@@ -1,4 +1,4 @@
-module reporter
+module github.com/bitmyth/reporter
 
 go 1.19
 
